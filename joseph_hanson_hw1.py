@@ -11,7 +11,17 @@ print output
 
 Joseph Hanson
 '''
-
+def check_input(input_year):
+    '''
+    Check of input by attempting to convert input given to a int value.
+    if int value can be converted returns True.
+    if int value cannot be converted excepts error and returns false.
+    '''
+    try:
+        _ = int(input_year)
+        return True
+    except ValueError:
+        return False
 
 def print_if_leap(input_year):
     '''
@@ -43,9 +53,16 @@ def main():
 
     while play == True:
         input_year = input("Please enter a year or type 'exit' to quit: ")
+        checked_input = check_input(input_year)
 
-        print_if_leap(input_year)
+        if checked_input == True:
+            print_if_leap(input_year)
 
+        if checked_input == False:
+            if exit_program in input_year:
+                play = False
+            else:
+                print("Invalid Input!")
 
 if __name__=='__main__':
     main()
