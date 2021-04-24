@@ -1,1 +1,1 @@
-![Image description](C:\Users\stalk\OneDrive\Desktop\CS 362\Homework2\flow-chart.png)
+![Flow Chart Leap Year Program](https://github.com/VikingOfScrum/Leap-year-HW2/blob/main/flow-chart.png)
